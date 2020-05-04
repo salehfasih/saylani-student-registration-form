@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+    <style>
+        .firstname{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.lastname{
+  margin-left: 55px;
+   margin-top: 20px;
+}
+.date{
+    margin-left: 25px;
+    text-align: center;
+    width: 170px;
+    margin-top: 20px;
+}
+.email{
+    margin-left: 70px;
+margin-top: 20px;
+
+}
+.number{
+    margin-left: 8px;
+margin-top: 20px;
+}
+.gender{
+    margin-left: 80px;
+    margin-top: 20px;
+}
+.address{
+    margin-left: 70px;
+    margin-top: 20px;
+      
+}
+.label{
+    margin-top: 100px;
+    background-color: darkblue;
+}
+.add{
+    margin-top: -100px;
+}
+.city{
+    margin-top: 20px;
+    margin-left: 108px;
+}
+.pincode{
+    margin-top: 20px;
+margin-left: 70px;
+}
+.state{
+    margin-top: 20px;
+margin-left: 94px;
+}
+.country{
+    margin-top: 20px;
+   margin-left: 65px;
+}
+form{
+    background-color:blueviolet;
+    width: 65%;
+    height: 900px;
+    margin-left: 220px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: 10px left;
+    display: cover;
+    border-style: solid;
+    border-color: darkmagenta;
+    border-radius: 10px;
+
+
+}
+.img{
+    margin-left: 460px;
+}
+.hobby{
+    margin-top: 20px;
+    margin-left: 70px;
+}
+.others{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.othersone{
+    margin-left: 5px;
+    margin-top: 20px;
+}
+.otherstwo{
+    margin-left: 150px;
+    margin-top: 20px;
+}
+table{
+    margin-top: -50px;
+    margin-left: 150px;
+}
+.data{
+    text-align: center  ;
+}
+.para{
+    margin-top: 50px;
+}
+label{
+    margin-left: 15px;
+}
+.course{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.reset{
+    margin-left: 20px;
+}
+h2{
+    margin-left: 479px;
+    color: blueviolet;
+    text-decoration: underline;
+}
+body{
+    background-image: url("https://images.unsplash.com/photo-1533204515132-035bc8d4128c?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.submit{
+    color:black;
+    text-decoration: none;
+    font-weight: lighter;
+    background-color: mintcream;
+    border-style: hidden;
+    margin-left: -150px;
+    margin-top: 40px;
+    border-style:inherit;
+    border-radius: 1px;
+    text-align: center;
+    width: 10px;
+    height: 20px;
+    box-shadow: 2px grey;
+    background-attachment: fixed;
+    font-size: 16px;
+    
+}
+.reset{
+    margin-left: 400px;
+    margin-top: 25px;
+}
+
+    </style>  
+</head>
+<body>
+   <img src="https://www.saylaniwelfare.com/public_html/images/saylani/Saylani-logo.png" class="img" >
+   <h2 class="heading">STUDENT REGISTRATION FORM</h2>
+   <form >
+       <div class="inputs" >
+       <label>FIRST NAME</label>
+       <input type="text" name="firstname" placeholder="Enter first name" class="firstname">(max 30 characters a-z and A-Z)<br>
+    <label>LAST NAME</label><input type="text" name="lastname" placeholder="last name" class="lastname">(max 30 characters a-z and A-Z)<br>
+    <label>DATE OF BIRTH</label>
+    <input type="date" class="date"><br>
+    <label>EMAIL ID</label>
+    <input type="email" placeholder="Enter email address" class="email"><br>
+    <label>MOBILE NUMBER</label>
+    <input type="number" placeholder="Enter mobile number" class="number">(10 digit number)<br>
+    <label >GENDER</label>
+    <span class="gender">male</span><input type="radio" name='gender' class="gender" checked="checked"><span class="gender">female</span><input type="radio"  class="gender" name="gender"><br>
+    <label>ADDRESS</label>
+    <textarea  name="comment"  rows="4" cols="40" class="address"></textarea><br>
+    <label>CITY</label>
+    <input  type="text" class="city" placeholder="Enter city name">(max 30 characters a-z and A-Z)<br>
+   <label>PIN CODE</label>
+   <input  type="text" class="pincode" placeholder="Enter pincode">(6 digit number)<br>
+   <label>STATE</label>
+<input  type="text" class="state" placeholder="Enter state">(max 30 characters a-z and A-Z)<br>
+<label>COUNTRY</label>
+<input  type="text" class="country" placeholder="Enter country name"><br>
+<label>HOBBIES:</label>
+<input type="checkbox" class="hobby"></span>Drawing<input type="checkbox" class="hobby" checked="checked" name="checkbox">
+singing<input type="checkbox" class="hobby" name="checkbox">Dancing<input type="checkbox"class="hobby" name="checkbox">Sketching<br>
+<span class="otherstwo">others</span><input type="checkbox" class="others" ><input type="text" class="othersone" ><br>
+<table >
+    <p class="para"><label>QUALIFICATION</label></p>
+    <tr class="heading">
+        <td>SI.NO</td>
+        <td>Examination</td>
+        <td class="data">    Board</td>
+        <td class="data">Percentage</td>
+        <td class="data">Year of Passing</td>
+        
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Class X</td>
+        <td><input type="text" ></td>
+        <td><input type="text" ></td>
+        <td><input type="text" ></td>
+
+    </tr>
+    <tr>
+        
+        <td>2</td>
+<td>Class XII</td>
+<td><input type="text" ></td>
+<td><input type="text" ></td>
+<td><input type="text" ></td>
+    </tr>
+    <tr>
+<td>3</td>
+<td>Graduation</td>
+<td><input type="text" ></td>
+<td><input type="text" ></td>
+<td><input type="text" ></td>
+    </tr>
+    <tr>
+    
+<td>4</td>
+<td>Master</td>
+<td><input type="text" ></td>
+<td><input type="text" ></td>
+<td><input type="text" ></td>
+
+    </tr>
+    <tr class="pattern">
+        <td></td>
+<td></td>
+<td class="data">(10 char max)</td>
+<td class="data">(upto 2 decimal)</td>
+<td></td>
+    </tr>
+</table>
+<label>COURSES<br><label></label>APPLIED FOR</label>
+<span class="course">BCA</span><input type="radio" class="course" name="course" checked="checked"><span class="course">B.COM</span><input type="radio" class="course" name="course">
+<span class="course" >B.Sc</span><input type="radio" class="course" name="course"><span class="course">BA</span><input type="radio" class="course" name="course"><br>
+<input type="reset" class="reset">
+<a href="submit.html" class="submit">submit</a>
+</div>
+   </form>
+    
+</body>
+</html>
